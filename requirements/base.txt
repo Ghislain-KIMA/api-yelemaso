@@ -1,0 +1,14 @@
+Django>=5.1,<6.1
+djangorestframework>=3.15,<3.16
+psycopg[binary]>=3.2,<3.3
+python-decouple>=3.8
+django-cors-headers>=4.4
+djangorestframework-simplejwt>=5.3
+phonenumbers>=8.13
+django-filter>=24.3
+
+# Pipeline d'extraction de documents (Document -> texte -> champs)
+pytesseract>=0.3.10   # OCR (scans / photos) -- nécessite le binaire tesseract-ocr installé sur le système
+Pillow>=10.4          # prétraitement d'image avant OCR
+pdfplumber>=0.11      # extraction de texte natif des PDF (et fallback image si PDF scanné)
+python-docx>=1.1      # extraction de texte des documents Word (.docx)

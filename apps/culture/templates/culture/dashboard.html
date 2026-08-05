@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Yelemaso — Dashboard des manifestations culturelles</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2rem; background: #f7f7f7; color: #222; }
+        h1 { font-size: 1.4rem; }
+        .filtres { margin-bottom: 1.5rem; }
+        .filtres select { margin-right: 1rem; padding: 0.3rem; }
+        .total { font-size: 1.1rem; margin-bottom: 1.5rem; }
+        .grille { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .carte { background: white; border-radius: 8px; padding: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.15); }
+        canvas { max-height: 300px; }
+    </style>
+</head>
+<body>
+    <h1>Yelemaso — Manifestations culturelles : {{ titre_zone }}</h1>
+
+    <form class="filtres" method="get">
+        <select name="niveau" onchange="this.form.submit()">
+            <option value="">-- National --</option>
+            <option value="region">Par région</option>
+            <option value="province">Par province</option>
+            <option value="commune">Par commune</option>
+        </select>
+        <select name="id" onchange="this.form.submit()">
+            <option value="">-- choisir --</option>
+            {% for r in regions %}<option value="{{ r.id }}">{{ r.nom_region }}</option>{% endfor %}
+        </select>
+    </form>
+
+    <p class="total">Total des manifestations recensées : <strong>{{ total }}</strong></p>
+
+    <div class="grille">
+        <div class="carte">
+            <h3>Par genre</h3>
+            <canvas id="chartGenre"></canvas>
+        </div>
+        <div class="carte">
+            <h3>Par type de manifestation</h3>
+            <canvas id="chartType"></canvas>
+        </div>
+        <div class="carte">
+            <h3>Mode d'accès</h3>
+            <canvas id="chartModeAcces"></canvas>
+        </div>
+        <div class="carte">
+            <h3>Répartition par mois</h3>
+            <canvas id="chartMois"></canvas>
+        </div>
+    </div>
+
+    <script>
+        const dataGenre = {{ data_genre_json|safe }};
+        const dataType = {{ data_type_json|safe }};
+        const dataModeAcces = {{ data_mode_acces_json|safe }};
+        const dataMois = {{ data_mois_json|safe }};
+
+        new Chart(document.getElementById('chartGenre'), {
+            type: 'bar',
+            data: { labels: dataGenre.labels, datasets: [{ label: 'Manifestations', data: dataGenre.valeurs, backgroundColor: '#4C6EF5' }] },
+        });
+        new Chart(document.getElementById('chartType'), {
+            type: 'bar',
+            data: { labels: dataType.labels, datasets: [{ label: 'Manifestations', data: dataType.valeurs, backgroundColor: '#12B886' }] },
+        });
+        new Chart(document.getElementById('chartModeAcces'), {
+            type: 'pie',
+            data: { labels: dataModeAcces.labels, datasets: [{ data: dataModeAcces.valeurs, backgroundColor: ['#FA5252', '#4C6EF5', '#FAB005'] }] },
+        });
+        new Chart(document.getElementById('chartMois'), {
+            type: 'line',
+            data: { labels: dataMois.labels, datasets: [{ label: 'Manifestations', data: dataMois.valeurs, borderColor: '#7048E8', fill: false }] },
+        });
+    </script>
+</body>
+</html>

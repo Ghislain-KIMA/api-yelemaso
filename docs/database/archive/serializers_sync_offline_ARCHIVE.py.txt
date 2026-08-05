@@ -1,0 +1,73 @@
+"""
+Base commune aux serializers de synchronisation ascendante (postes locaux
+-> central) pour les modèles UUIDModel.
+
+Pourquoi ce fichier existe : DRF rend automatiquement la clé primaire
+d'un ModelSerializer en lecture seule (`read_only=True`), quel que soit
+`editable` sur le champ modèle. Pour nos modèles produits hors ligne
+(UUIDModel), l'UUID est généré côté client (Flutter) au moment de la
+création locale -- il doit rester stable après synchronisation, sinon
+toutes les relations construites localement (FK vers cet objet dans
+d'autres tables encore en attente de sync) deviennent incohérentes.
+`WritableUUIDIdModelSerializer` réexpose `id` en écriture, et gère la
+réémission idempotente : si un poste renvoie un id déjà connu du serveur
+(retry après coupure réseau avant réception de l'accusé), on met à jour
+l'existant plutôt que d'échouer sur une violation de contrainte PK.
+
+LIMITE CONNUE (protocole de sync, pas un bug de ce fichier) : quand la
+déduplication par clé métier (resolve_by_natural_key) trouve une
+correspondance, l'objet retourné a un id DIFFÉRENT de celui généré par
+le poste local. Si d'autres objets pas encore synchronisés référencent
+localement l'ancien id (ex: une Manifestation en attente qui référence
+un Ampliation tout juste dédupliqué), le client Flutter doit mettre à
+jour sa base locale avec l'id renvoyé par le serveur avant de
+synchroniser ces objets dépendants -- sans quoi leur FK pointera vers un
+id qui n'existe pas côté central. À gérer dans la logique de synchro
+Flutter (traiter les réponses de sync dans l'ordre topologique des
+dépendances, et réécrire les FK locales avec les id serveur renvoyés).
+"""
+from rest_framework import serializers
+
+
+class WritableUUIDIdModelSerializer(serializers.ModelSerializer):
+    id = serializers.UUIDField()
+
+    def create(self, validated_data):
+        model = self.Meta.model
+        obj_id = validated_data.pop("id")
+
+        # 1. Idempotence de retry : ce poste a-t-il déjà envoyé cet objet
+        #    (même UUID), par exemple après une coupure réseau avant
+        #    réception de l'accusé de réception ? Si oui, on met à jour
+        #    plutôt que d'échouer sur la contrainte de clé primaire.
+        existing = model.objects.filter(id=obj_id).first()
+        if existing is not None:
+            for key, value in validated_data.items():
+                setattr(existing, key, value)
+            existing.save()
+            return existing
+
+        # 2. Déduplication métier (téléphone, numéro CNIB, etc.) : un autre
+        #    poste a-t-il déjà créé un objet équivalent ? Si oui, on
+        #    réutilise cet objet existant plutôt que d'en créer un doublon
+        #    -- son id restera différent de celui généré localement par ce
+        #    poste, ce qui est normal (voir note de synchronisation).
+        resolved = self.resolve_by_natural_key(validated_data)
+        if resolved is not None:
+            return resolved
+
+        # 3. Vraie création : aucun objet existant ne correspond, on garde
+        #    l'UUID généré côté client pour préserver les relations déjà
+        #    construites localement (FK vers cet objet dans d'autres
+        #    enregistrements encore en attente de synchronisation).
+        validated_data["id"] = obj_id
+        return model.objects.create(**validated_data)
+
+    def resolve_by_natural_key(self, validated_data):
+        """
+        À surcharger dans les sous-classes qui doivent dédupliquer par une
+        clé métier avant de créer un nouvel enregistrement. Retourne
+        l'objet existant trouvé, ou None si aucune correspondance (dans ce
+        cas, une création normale a lieu).
+        """
+        return None
