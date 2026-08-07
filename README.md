@@ -124,6 +124,7 @@ saisie distribuée multi-postes hors ligne. En conséquence :
 
 ## À faire ensuite
 
+- [ ] Rendre Commune.type_commune nullable
 - [ ] Insertion des seeds.
 - [ ] Commande d'extraction de plusieurs fichier.
 - [ ] Authentification (JWT déjà en dépendance, à câbler sur les vues)

@@ -1,3 +1,40 @@
+Bonne nouvelle, l'export CSV va bien plus simplifier les choses. Deux points avant le code : le format d'export, puis la structure de fichiers attendue par app.
+
+**Export depuis Excel — un point à ne pas rater**
+
+Utilise **"CSV UTF-8 (délimité par des virgules)"** dans Excel (`Fichier > Enregistrer sous`), pas le simple "CSV" — sinon les accents français (`é`, `è`, `à`...) risquent d'être mal encodés à la lecture en Python.
+
+**Structure de fichiers attendue, par app**
+
+| App                | Fichier                    | Colonnes                                            |
+| ------------------ | -------------------------- | --------------------------------------------------- |
+| `administration` | `regions.csv`            | `nom_region`                                      |
+| `administration` | `provinces.csv`          | `nom_province`, `nom_region`                    |
+| `administration` | `communes.csv`           | `nom_commune`, `nom_province`, `type_commune` |
+| `administration` | `type_commune.csv`       | `label`                                           |
+| `administration` | `type_mairie.csv`        | `label`                                           |
+| `culture`        | `genre.csv`              | `label`                                           |
+| `culture`        | `type_manifestation.csv` | `label`                                           |
+| `culture`        | `periodicite.csv`        | `label`                                           |
+| `culture`        | `dimension.csv`          | `label`                                           |
+| `culture`        | `type_espace.csv`        | `label`                                           |
+| `culture`        | `mode_acces.csv`         | `label`                                           |
+| `gestion`        | `statut_demandeur.csv`   | `label`                                           |
+| `gestion`        | `ampliation.csv`         | `label`                                           |
+
+Je crée un utilitaire partagé (`core/seed_utils.py`) pour éviter de répéter la même logique "lire un CSV à une colonne `label`, `get_or_create`" dans 8 tables différentes :Le container a été réinitialisé, mais le zip est toujours là — je le restaure avant d'ajouter les scripts de seed :Restauré. Je crée l'utilitaire partagé et les trois commandes de seed :Créons des fichiers CSV d'exemple (avec des données réalistes, style Ampliation/Statut_Demandeur qu'on avait déjà définies dans le MCD) pour que tu voies le format exact et que le tout se teste réellement :Testons réellement les trois commandes sur une base SQLite temporaire :Django n'est plus installé (container réinitialisé). Je le réinstalle pour terminer le test :Migré. Maintenant testons les trois commandes de seed :Parfait, la hiérarchie complète (Région → Province → Commune) se crée correctement, avec matching réussi sur les clés naturelles. Testons `culture` et `gestion`, puis l'idempotence :Tout se peuple correctement. Testons maintenant l'**idempotence** — relancer une deuxième fois doit créer zéro doublon :**Idempotence confirmée** : zéro doublon au deuxième passage, les comptes restent stables. Nettoyage et livraison :Ajout d'une note dans le README pour documenter ces commandes :## Résumé — testé de bout en bout
+
+**3 commandes créées** : `seed_administration` (Region/Province/Commune/Type_Commune/Type_Mairie, avec matching en cascade sur les clés naturelles), `seed_culture` (les 6 référentiels culturels), `seed_gestion` (Statut_Demandeur/Ampliation) — toutes construites sur un utilitaire partagé `core/seed_utils.py`.
+
+**Réellement testé** : les 3 commandes exécutées sur une vraie base SQLite, avec des CSV d'exemple (contenant les valeurs qu'on avait déjà définies ensemble dans le MCD). **Idempotence vérifiée** : relancées une deuxième fois, elles affichent bien `0 créé(s)` partout, comptes stables.
+
+**Ce que tu dois faire maintenant**
+
+1. **Exporte tes fichiers Excel en "CSV UTF-8"** (important pour les accents) — un fichier par table, dans `apps/<app>/seed_data/`, selon le tableau de colonnes attendu que je t'ai donné plus haut.
+2. Remplace mes CSV d'exemple (4 régions, 4 communes... juste pour tester) par tes vraies données complètes.
+3. Lance les 3 commandes dans l'ordre : `seed_administration`, `seed_culture`, `seed_gestion`.
+
+**Un point d'attention pour `communes.csv`** : la commande **ignore silencieusement** (avec message d'erreur affiché, pas de crash) toute ligne où `nom_province` ou `type_commune` ne correspond pas exactement à une valeur déjà en base — vérifie bien l'orthographe exacte (accents compris) entre tes fichiers `provinces.csv` et `communes.csv`.
 
 Bien, on part de zéro chez toi. Je découpe en 6 étapes, chacune avec son propre commit suggéré — comme ça ton historique Git reste propre et compréhensible.
 
