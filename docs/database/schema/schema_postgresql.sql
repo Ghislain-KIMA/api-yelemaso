@@ -36,7 +36,7 @@ CREATE TABLE administration.type_commune (
 CREATE TABLE administration.commune (
     id                SMALLINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     nom_commune       VARCHAR(50) NOT NULL,
-    type_commune_id   SMALLINT NOT NULL REFERENCES administration.type_commune(id),
+    type_commune_id   SMALLINT REFERENCES administration.type_commune(id),
     province_id       SMALLINT NOT NULL REFERENCES administration.province(id),
     CONSTRAINT uq_commune_nom_province UNIQUE (nom_commune, province_id)
 );
@@ -62,8 +62,16 @@ DECLARE
 BEGIN
     SELECT tc.label INTO v_label_type_commune
     FROM administration.commune c
-    JOIN administration.type_commune tc ON tc.id = c.type_commune_id
+    LEFT JOIN administration.type_commune tc ON tc.id = c.type_commune_id
     WHERE c.id = NEW.commune_id;
+
+    -- Si le type de la commune n'est pas encore renseigné (import en
+    -- cours, classification pas encore faite), on ne peut pas appliquer
+    -- la règle "une seule mairie" -- elle sera revérifiée dès que le
+    -- type sera connu (au prochain INSERT/UPDATE d'une Mairie).
+    IF v_label_type_commune IS NULL THEN
+        RETURN NEW;
+    END IF;
 
     IF lower(v_label_type_commune) IN ('rurale', 'urbaine') THEN
         SELECT count(*) INTO v_nb_mairies

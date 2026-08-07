@@ -46,7 +46,7 @@ class TypeCommune(ReferenceModel):
 class Commune(ReferenceModel):
     nom_commune = models.CharField(max_length=50)
     type_commune = models.ForeignKey(
-        TypeCommune, on_delete=models.PROTECT, related_name="communes"
+        TypeCommune, on_delete=models.PROTECT, related_name="communes", null=True, blank=True
     )
     province = models.ForeignKey(
         Province, on_delete=models.PROTECT, related_name="communes"
@@ -108,6 +108,10 @@ class Mairie(ReferenceModel):
         (voir docs/database/schema/schema_postgresql.sql) pour garantir
         l'intégrité même hors de l'API.
         """
+        
+        if self.commune.type_commune is None :
+            return
+
         label = self.commune.type_commune.label.lower()
         if label in ("rurale", "urbaine"):
             qs = Mairie.objects.filter(commune=self.commune).exclude(pk=self.pk)
