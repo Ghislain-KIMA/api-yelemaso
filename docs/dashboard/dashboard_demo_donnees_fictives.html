@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yelemaso — Bilan des manifestations culturelles autorisées</title>
+<style>
+  :root{
+    --paper:#F3EEE1;
+    --paper-dim:#EAE2CC;
+    --ink:#211E1B;
+    --ink-soft:#5B564C;
+    --indigo:#1F3A5F;
+    --clay:#B5651D;
+    --brick:#A8322D;
+    --sand:#D8CBA0;
+    --vert:#5B7B6B;
+    --rule: rgba(33,30,27,0.18);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    /* Empiles de polices systeme -- aucune dependance a un CDN de polices,
+       le rendu reste identique meme sans connexion internet. */
+    font-family: Georgia, 'Times New Roman', serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .serif{ font-family: Georgia, 'Times New Roman', serif; }
+  .mono{ font-family: 'Courier New', ui-monospace, monospace; }
+
+  .feuille{
+    max-width:1120px;
+    margin:0 auto;
+    padding:2.5rem 2.5rem 4rem;
+  }
+
+  /* ---------- En-tête façon lettre administrative ---------- */
+  .entete{
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
+    align-items:start;
+    gap:1.5rem;
+    padding-bottom:1.75rem;
+    border-bottom:2px solid var(--ink);
+  }
+  .entete .bloc-gauche, .entete .bloc-droite{
+    font-size:0.72rem;
+    letter-spacing:0.06em;
+    color:var(--ink-soft);
+    line-height:1.9;
+  }
+  .entete .bloc-droite{ text-align:right; }
+  .entete .separateur{
+    display:block;
+    color:var(--clay);
+    letter-spacing:0.3em;
+  }
+  .entete .sceau{
+    width:64px; height:64px;
+    border:2px solid var(--indigo);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-size:0.62rem;
+    text-align:center;
+    color:var(--indigo);
+    line-height:1.15;
+    padding:4px;
+  }
+
+  .titre-rapport{ margin-top:1.75rem; text-align:center; }
+  .titre-rapport .eyebrow{
+    font-size:0.7rem;
+    letter-spacing:0.28em;
+    color:var(--brick);
+    text-transform:uppercase;
+  }
+  .titre-rapport h1{
+    font-weight:500;
+    font-style:italic;
+    font-size:2.15rem;
+    margin:0.35rem 0 0.15rem;
+    letter-spacing:0.01em;
+  }
+  .titre-rapport .sous-titre{
+    font-size:0.92rem;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- Boîte "N° dossier" — signature visuelle ---------- */
+  .dossier{
+    margin:2rem 0 2.5rem;
+    border:1.5px solid var(--ink);
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+  }
+  .dossier .cellule{ padding:1.1rem 1.4rem; border-right:1.5px solid var(--ink); }
+  .dossier .cellule:last-child{ border-right:none; }
+  .dossier .num{
+    font-size:0.68rem;
+    letter-spacing:0.08em;
+    color:var(--ink-soft);
+    text-transform:uppercase;
+  }
+  .dossier .valeur{
+    font-size:2.1rem;
+    font-weight:600;
+    color:var(--indigo);
+    margin-top:0.25rem;
+  }
+  .dossier .valeur small{
+    font-size:0.95rem;
+    font-weight:400;
+    color:var(--ink-soft);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* ---------- Sections ---------- */
+  .section{ margin-bottom:2.75rem; }
+  .section-tete{
+    display:flex;
+    align-items:baseline;
+    gap:0.6rem;
+    margin-bottom:1rem;
+    padding-bottom:0.5rem;
+    border-bottom:1px solid var(--rule);
+  }
+  .section-tete .label{
+    font-size:0.75rem;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--brick);
+  }
+  .section-tete .titre{
+    font-size:1.3rem;
+    font-style:italic;
+    color:var(--ink);
+  }
+  .section-tete .fil{
+    flex:1;
+    height:1px;
+    background:repeating-linear-gradient(90deg, var(--ink-soft) 0 3px, transparent 3px 7px);
+    opacity:0.35;
+    margin-left:0.4rem;
+  }
+
+  .grille-2{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:2rem; }
+  .carte{
+    background:var(--paper-dim);
+    border:1px solid var(--rule);
+    padding:1.25rem 1.4rem 0.9rem;
+  }
+  .note{
+    font-size:0.68rem;
+    color:var(--ink-soft);
+    margin-top:0.6rem;
+    text-align:right;
+  }
+
+  /* ---------- Graphiques en barres horizontales (SVG natif) ---------- */
+  .barre-ligne{ display:flex; align-items:center; gap:0.75rem; margin:0.55rem 0; }
+  .barre-etiquette{
+    flex:0 0 180px;
+    font-size:0.78rem;
+    text-align:right;
+    color:var(--ink);
+  }
+  .barre-piste{ flex:1; background:rgba(33,30,27,0.08); height:16px; position:relative; }
+  .barre-remplissage{ height:100%; }
+  .barre-valeur{
+    flex:0 0 28px;
+    font-size:0.78rem;
+    color:var(--ink-soft);
+  }
+
+  footer{
+    margin-top:3rem;
+    padding-top:1.25rem;
+    border-top:2px solid var(--ink);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:0.68rem;
+    color:var(--ink-soft);
+    letter-spacing:0.04em;
+  }
+  footer .avertissement{ color:var(--brick); font-weight:600; }
+
+  @media (max-width:760px){
+    .entete{ grid-template-columns:1fr; text-align:center; }
+    .entete .bloc-droite{ text-align:center; }
+    .entete .sceau{ margin:0.5rem auto; }
+    .dossier{ grid-template-columns:1fr 1fr; }
+    .dossier .cellule:nth-child(2){ border-right:none; }
+    .grille-2{ grid-template-columns:1fr; }
+    .barre-etiquette{ flex-basis:110px; font-size:0.7rem; }
+  }
+</style>
+</head>
+<body>
+<div class="feuille">
+
+  <div class="entete mono">
+    <div class="bloc-gauche">
+      RÉGION DE LA BOUCLE DU MOUHOUN<br>PROVINCE DE LA KOSSI
+      <span class="separateur">*.*.*.*.*</span>
+      COMMUNE DE NOUNA<br>MAIRIE — SECRÉTARIAT GÉNÉRAL
+    </div>
+    <div class="sceau serif">YELE<br>MASO</div>
+    <div class="bloc-droite">
+      BURKINA FASO<br>
+      <em class="serif" style="font-style:italic; font-size:0.8rem; color:var(--ink-soft);">Honneur, Solidarité, Travail</em>
+      <span class="separateur">*.*.*.*.*</span>
+      Nouna, bilan annuel 2026
+    </div>
+  </div>
+
+  <div class="titre-rapport">
+    <div class="eyebrow mono">Données fictives — démonstration</div>
+    <h1 class="serif">Bilan des manifestations culturelles autorisées</h1>
+    <div class="sous-titre">Synthèse communale des Autorisations de Manifester — Commune de Nouna, exercice 2026</div>
+  </div>
+
+  <div class="dossier">
+    <div class="cellule">
+      <div class="num mono">N° / Total recensé</div>
+      <div class="valeur serif">37 <small>AM</small></div>
+    </div>
+    <div class="cellule">
+      <div class="num mono">Genres distincts</div>
+      <div class="valeur serif">9 <small>genres</small></div>
+    </div>
+    <div class="cellule">
+      <div class="num mono">Accès gratuit</div>
+      <div class="valeur serif">68 <small>%</small></div>
+    </div>
+    <div class="cellule">
+      <div class="num mono">Type dominant</div>
+      <div class="valeur serif" style="font-size:1.5rem;">Tournoi</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-tete">
+      <span class="label mono">01 — Genre</span>
+      <span class="titre serif">Répartition par genre de manifestation</span>
+      <span class="fil"></span>
+    </div>
+    <div class="carte" id="chartGenre"></div>
+    <div class="note mono">Fig. 1 — nombre d'AM par genre, commune de Nouna</div>
+  </div>
+
+  <div class="section grille-2">
+    <div>
+      <div class="section-tete">
+        <span class="label mono">02 — Type</span>
+        <span class="titre serif">Types de manifestation</span>
+        <span class="fil"></span>
+      </div>
+      <div class="carte" id="chartType"></div>
+      <div class="note mono">Fig. 2 — répartition par nature de l'événement</div>
+    </div>
+    <div>
+      <div class="section-tete">
+        <span class="label mono">03 — Accès</span>
+        <span class="titre serif">Mode d'accès</span>
+        <span class="fil"></span>
+      </div>
+      <div class="carte" id="chartAcces"></div>
+      <div class="note mono">Fig. 3 — payant / gratuit / mixte</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-tete">
+      <span class="label mono">04 — Calendrier</span>
+      <span class="titre serif">Évolution mensuelle des autorisations délivrées</span>
+      <span class="fil"></span>
+    </div>
+    <div class="carte" id="chartMois"></div>
+    <div class="note mono">Fig. 4 — nombre d'AM délivrées par mois, exercice 2026</div>
+  </div>
+
+  <div class="section">
+    <div class="section-tete">
+      <span class="label mono">05 — Territoire</span>
+      <span class="titre serif">Répartition par secteur / lieu de la manifestation</span>
+      <span class="fil"></span>
+    </div>
+    <div class="carte" id="chartSecteurs"></div>
+    <div class="note mono">Fig. 5 — nombre d'AM par secteur de la commune de Nouna</div>
+  </div>
+
+  <footer class="mono">
+    <div>Yelemaso — Bilan communal, Nouna (Boucle du Mouhoun / Kossi)</div>
+    <div class="avertissement">Jeu de données fictif à des fins d'illustration</div>
+  </footer>
+
+</div>
+
+<script>
+/*
+ * Graphiques dessinés en SVG natif (aucune librairie externe, aucun CDN) :
+ * le rendu ne dépend d'aucune connexion réseau, cohérent avec le contexte
+ * de connectivité limitée qui a guidé toute la conception du projet.
+ */
+
+function barreHorizontale(conteneurId, donnees, couleur){
+  const conteneur = document.getElementById(conteneurId);
+  const max = Math.max(...donnees.map(d => d.valeur));
+  donnees.forEach(d => {
+    const ligne = document.createElement('div');
+    ligne.className = 'barre-ligne';
+
+    const etiquette = document.createElement('div');
+    etiquette.className = 'barre-etiquette';
+    etiquette.textContent = d.label;
+
+    const piste = document.createElement('div');
+    piste.className = 'barre-piste';
+    const remplissage = document.createElement('div');
+    remplissage.className = 'barre-remplissage';
+    remplissage.style.width = (d.valeur / max * 100) + '%';
+    remplissage.style.background = d.couleur || couleur;
+    piste.appendChild(remplissage);
+
+    const valeur = document.createElement('div');
+    valeur.className = 'barre-valeur mono';
+    valeur.textContent = d.valeur;
+
+    ligne.appendChild(etiquette);
+    ligne.appendChild(piste);
+    ligne.appendChild(valeur);
+    conteneur.appendChild(ligne);
+  });
+}
+
+function graphiqueLigne(conteneurId, labels, valeurs, couleur){
+  const largeur = 760, hauteur = 220, marge = 32;
+  const max = Math.max(...valeurs) * 1.15;
+  const pas = (largeur - marge * 2) / (valeurs.length - 1);
+
+  const points = valeurs.map((v, i) => {
+    const x = marge + i * pas;
+    const y = hauteur - marge - (v / max) * (hauteur - marge * 1.6);
+    return [x, y];
+  });
+
+  const chemin = points.map((p, i) => (i === 0 ? 'M' : 'L') + p[0] + ',' + p[1]).join(' ');
+  const aire = chemin + ` L${points[points.length-1][0]},${hauteur-marge} L${points[0][0]},${hauteur-marge} Z`;
+
+  let svg = `<svg viewBox="0 0 ${largeur} ${hauteur}" style="width:100%; height:auto; display:block;">`;
+  svg += `<path d="${aire}" fill="${couleur}" opacity="0.14" stroke="none"></path>`;
+  svg += `<path d="${chemin}" fill="none" stroke="${couleur}" stroke-width="2.2"></path>`;
+  points.forEach((p, i) => {
+    svg += `<circle cx="${p[0]}" cy="${p[1]}" r="3.2" fill="${couleur}"></circle>`;
+    svg += `<text x="${p[0]}" y="${hauteur-8}" font-size="10" fill="#5B564C" text-anchor="middle">${labels[i]}</text>`;
+    svg += `<text x="${p[0]}" y="${p[1]-8}" font-size="10" fill="#211E1B" text-anchor="middle">${valeurs[i]}</text>`;
+  });
+  svg += `</svg>`;
+
+  document.getElementById(conteneurId).innerHTML = svg;
+}
+
+barreHorizontale('chartGenre', [
+  {label:'Sportif', valeur:9},
+  {label:'Musique', valeur:7},
+  {label:'Religieux/Cultuel', valeur:6},
+  {label:'Communautaire/Associatif', valeur:5},
+  {label:'Danse', valeur:4},
+  {label:'Multi genre', valeur:3},
+  {label:'Théâtre', valeur:2},
+  {label:'Conte', valeur:1},
+  {label:'Artisanat', valeur:1},
+], '#1F3A5F');
+
+barreHorizontale('chartType', [
+  {label:'Tournoi', valeur:11},
+  {label:'Cérémonie religieuse', valeur:7},
+  {label:'Assemblée générale', valeur:6},
+  {label:'Concert', valeur:5},
+  {label:'Foire', valeur:4},
+  {label:'Compétition sportive', valeur:3},
+  {label:'Exposition', valeur:1},
+], '#B5651D');
+
+barreHorizontale('chartAcces', [
+  {label:'Gratuit', valeur:25, couleur:'#5B7B6B'},
+  {label:'Payant', valeur:8, couleur:'#A8322D'},
+  {label:'Les deux', valeur:4, couleur:'#8C7A4B'},
+], '#5B7B6B');
+
+barreHorizontale('chartSecteurs', [
+  {label:'Secteur 1 (centre-ville)', valeur:10},
+  {label:'Terrain du séminaire', valeur:8},
+  {label:'Secteur 3', valeur:6},
+  {label:'Secteur 5', valeur:5},
+  {label:'Place de la Nation', valeur:4},
+  {label:'Secteur 2', valeur:3},
+  {label:'Secteur 4', valeur:1},
+], '#1F3A5F');
+
+graphiqueLigne(
+  'chartMois',
+  ['Jan','Fév','Mars','Avr','Mai','Juin','Juil','Août','Sept','Oct','Nov','Déc'],
+  [1,1,2,2,3,4,6,7,4,3,2,2],
+  '#A8322D'
+);
+</script>
+</body>
+</html>

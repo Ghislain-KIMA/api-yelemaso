@@ -1,4 +1,3 @@
-
 # Backend — Yelemaso : plateforme de dépouillement et l'analyse des manifestations culturelles
 
 Système centralisé qui extrait automatiquement les données des Autorisations
@@ -125,6 +124,8 @@ saisie distribuée multi-postes hors ligne. En conséquence :
 
 ## À faire ensuite
 
+- [ ] Insertion des seeds.
+- [ ] Commande d'extraction de plusieurs fichier.
 - [ ] Authentification (JWT déjà en dépendance, à câbler sur les vues)
 - [ ] Écran de validation web (actuellement seulement en CLI via
   `extraire_document --valider`)
