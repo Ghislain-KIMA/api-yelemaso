@@ -1,0 +1,3656 @@
+[
+  {
+    "model": "administration.region",
+    "pk": 1,
+    "fields": {
+      "nom_region": "Bankui"
+    }
+  },
+  {
+    "model": "administration.region",
+    "pk": 2,
+    "fields": {
+      "nom_region": "Djôrô"
+    }
+  },
+  {
+    "model": "administration.region",
+    "pk": 3,
+    "fields": {
+      "nom_region": "Goulmou"
+    }
+  },
+  {
+    "model": "administration.region",
+    "pk": 4,
+    "fields": {
+      "nom_region": "Guiriko"
+    }
+  },
+  {
+    "model": "administration.region",
+    "pk": 5,
+    "fields": {
+      "nom_region": "Kadiogo"
+    }
+  },
+  {
+    "model": "administration.region",
+    "pk": 6,
+    "fields": {
+      "nom_region": "Koulsé"
+    }
+  },
+  {
+    "model": "administration.region",
+    "pk": 7,
+    "fields": {
+      "nom_region": "Liptako"
+    }
+  },
+  {
+    "model": "administration.region",
+    "pk": 8,
+    "fields": {
+      "nom_region": "Nakambé"
+    }
+  },
+  {
+    "model": "administration.region",
+    "pk": 9,
+    "fields": {
+      "nom_region": "Nando"
+    }
+  },
+  {
+    "model": "administration.region",
+    "pk": 10,
+    "fields": {
+      "nom_region": "Nazinon"
+    }
+  },
+  {
+    "model": "administration.region",
+    "pk": 11,
+    "fields": {
+      "nom_region": "Oubri"
+    }
+  },
+  {
+    "model": "administration.region",
+    "pk": 12,
+    "fields": {
+      "nom_region": "Sirba"
+    }
+  },
+  {
+    "model": "administration.region",
+    "pk": 13,
+    "fields": {
+      "nom_region": "Soum"
+    }
+  },
+  {
+    "model": "administration.region",
+    "pk": 14,
+    "fields": {
+      "nom_region": "Sourou"
+    }
+  },
+  {
+    "model": "administration.region",
+    "pk": 15,
+    "fields": {
+      "nom_region": "Tannounyan"
+    }
+  },
+  {
+    "model": "administration.region",
+    "pk": 16,
+    "fields": {
+      "nom_region": "Tapoa"
+    }
+  },
+  {
+    "model": "administration.region",
+    "pk": 17,
+    "fields": {
+      "nom_region": "Yaadga"
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 1,
+    "fields": {
+      "nom_province": "Mouhoun",
+      "region": 1
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 2,
+    "fields": {
+      "nom_province": "Balé",
+      "region": 1
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 3,
+    "fields": {
+      "nom_province": "Bamwa",
+      "region": 1
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 4,
+    "fields": {
+      "nom_province": "Bougouriba",
+      "region": 2
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 5,
+    "fields": {
+      "nom_province": "Ioba",
+      "region": 2
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 6,
+    "fields": {
+      "nom_province": "Noumbiel",
+      "region": 2
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 7,
+    "fields": {
+      "nom_province": "Poni",
+      "region": 2
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 8,
+    "fields": {
+      "nom_province": "Gourma",
+      "region": 3
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 9,
+    "fields": {
+      "nom_province": "Kompienga",
+      "region": 3
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 10,
+    "fields": {
+      "nom_province": "Houet",
+      "region": 4
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 11,
+    "fields": {
+      "nom_province": "Kénédougou",
+      "region": 4
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 12,
+    "fields": {
+      "nom_province": "Tuy",
+      "region": 4
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 13,
+    "fields": {
+      "nom_province": "Kadiogo",
+      "region": 5
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 14,
+    "fields": {
+      "nom_province": "Bam",
+      "region": 6
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 15,
+    "fields": {
+      "nom_province": "Namentenga",
+      "region": 6
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 16,
+    "fields": {
+      "nom_province": "Sandbondtenga",
+      "region": 6
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 17,
+    "fields": {
+      "nom_province": "Oudalan",
+      "region": 7
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 18,
+    "fields": {
+      "nom_province": "Séno",
+      "region": 7
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 19,
+    "fields": {
+      "nom_province": "Yagha",
+      "region": 7
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 20,
+    "fields": {
+      "nom_province": "Boulgou",
+      "region": 8
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 21,
+    "fields": {
+      "nom_province": "Koulpelogo",
+      "region": 8
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 22,
+    "fields": {
+      "nom_province": "Kourittenga",
+      "region": 8
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 23,
+    "fields": {
+      "nom_province": "Boulkiemdé",
+      "region": 9
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 24,
+    "fields": {
+      "nom_province": "Sanguié",
+      "region": 9
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 25,
+    "fields": {
+      "nom_province": "Sissili",
+      "region": 9
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 26,
+    "fields": {
+      "nom_province": "Ziro",
+      "region": 9
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 27,
+    "fields": {
+      "nom_province": "Bazèga",
+      "region": 10
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 28,
+    "fields": {
+      "nom_province": "Nahouri",
+      "region": 10
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 29,
+    "fields": {
+      "nom_province": "Zoundwéogo",
+      "region": 10
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 30,
+    "fields": {
+      "nom_province": "Bassitenga",
+      "region": 11
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 31,
+    "fields": {
+      "nom_province": "Ganzourgou",
+      "region": 11
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 32,
+    "fields": {
+      "nom_province": "Kourwéogo",
+      "region": 11
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 33,
+    "fields": {
+      "nom_province": "Gnagna",
+      "region": 12
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 34,
+    "fields": {
+      "nom_province": "Komondjari",
+      "region": 12
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 35,
+    "fields": {
+      "nom_province": "Djelgodji",
+      "region": 13
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 36,
+    "fields": {
+      "nom_province": "Karo-Peli",
+      "region": 13
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 37,
+    "fields": {
+      "nom_province": "Koosin",
+      "region": 14
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 38,
+    "fields": {
+      "nom_province": "Nayala",
+      "region": 14
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 39,
+    "fields": {
+      "nom_province": "Sourou",
+      "region": 14
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 40,
+    "fields": {
+      "nom_province": "Comoé",
+      "region": 15
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 41,
+    "fields": {
+      "nom_province": "Léraba",
+      "region": 15
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 42,
+    "fields": {
+      "nom_province": "Dyamongou",
+      "region": 16
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 43,
+    "fields": {
+      "nom_province": "Gobnangou",
+      "region": 16
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 44,
+    "fields": {
+      "nom_province": "Loroum",
+      "region": 17
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 45,
+    "fields": {
+      "nom_province": "Passoré",
+      "region": 17
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 46,
+    "fields": {
+      "nom_province": "Yatenga",
+      "region": 17
+    }
+  },
+  {
+    "model": "administration.province",
+    "pk": 47,
+    "fields": {
+      "nom_province": "Zondoma",
+      "region": 17
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 1,
+    "fields": {
+      "nom_commune": "Bondokuy",
+      "province": 1,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 2,
+    "fields": {
+      "nom_commune": "Dédougou",
+      "province": 1,
+      "type_commune": "Urbaine"
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 3,
+    "fields": {
+      "nom_commune": "Douroula",
+      "province": 1,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 4,
+    "fields": {
+      "nom_commune": "Kona",
+      "province": 1,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 5,
+    "fields": {
+      "nom_commune": "Ouarkoye",
+      "province": 1,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 6,
+    "fields": {
+      "nom_commune": "Safané",
+      "province": 1,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 7,
+    "fields": {
+      "nom_commune": "Tchériba",
+      "province": 1,
+      "type_commune": "Urbaine"
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 8,
+    "fields": {
+      "nom_commune": "Bagassi",
+      "province": 2,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 9,
+    "fields": {
+      "nom_commune": "Bana",
+      "province": 2,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 10,
+    "fields": {
+      "nom_commune": "Boromo",
+      "province": 2,
+      "type_commune": "Urbaine"
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 11,
+    "fields": {
+      "nom_commune": "Fara",
+      "province": 2,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 12,
+    "fields": {
+      "nom_commune": "Pa",
+      "province": 2,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 13,
+    "fields": {
+      "nom_commune": "Pompoï",
+      "province": 2,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 14,
+    "fields": {
+      "nom_commune": "Poura",
+      "province": 2,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 15,
+    "fields": {
+      "nom_commune": "Oury",
+      "province": 2,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 16,
+    "fields": {
+      "nom_commune": "Siby",
+      "province": 2,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 17,
+    "fields": {
+      "nom_commune": "Yaho",
+      "province": 2,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 18,
+    "fields": {
+      "nom_commune": "Balavé",
+      "province": 3,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 19,
+    "fields": {
+      "nom_commune": "Kouka",
+      "province": 3,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 20,
+    "fields": {
+      "nom_commune": "Sami",
+      "province": 3,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 21,
+    "fields": {
+      "nom_commune": "Sanaba",
+      "province": 3,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 22,
+    "fields": {
+      "nom_commune": "Solenzo",
+      "province": 3,
+      "type_commune": "Urbaine"
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 23,
+    "fields": {
+      "nom_commune": "Tansila",
+      "province": 3,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 24,
+    "fields": {
+      "nom_commune": "Gbondjigui",
+      "province": 4,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 25,
+    "fields": {
+      "nom_commune": "Diébougou",
+      "province": 4,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 26,
+    "fields": {
+      "nom_commune": "Dolo",
+      "province": 4,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 27,
+    "fields": {
+      "nom_commune": "Nioronioro",
+      "province": 4,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 28,
+    "fields": {
+      "nom_commune": "Tiankoura",
+      "province": 4,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 29,
+    "fields": {
+      "nom_commune": "Dano",
+      "province": 5,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 30,
+    "fields": {
+      "nom_commune": "Dissihn",
+      "province": 5,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 31,
+    "fields": {
+      "nom_commune": "Guéguéré",
+      "province": 5,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 32,
+    "fields": {
+      "nom_commune": "Koper",
+      "province": 5,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 33,
+    "fields": {
+      "nom_commune": "Niégo",
+      "province": 5,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 34,
+    "fields": {
+      "nom_commune": "Oronkua",
+      "province": 5,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 35,
+    "fields": {
+      "nom_commune": "Ouéssa",
+      "province": 5,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 36,
+    "fields": {
+      "nom_commune": "Zambo",
+      "province": 5,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 37,
+    "fields": {
+      "nom_commune": "Batié",
+      "province": 6,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 38,
+    "fields": {
+      "nom_commune": "Boussoukoula",
+      "province": 6,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 39,
+    "fields": {
+      "nom_commune": "Kpéré",
+      "province": 6,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 40,
+    "fields": {
+      "nom_commune": "Legmoin",
+      "province": 6,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 41,
+    "fields": {
+      "nom_commune": "Midebdo",
+      "province": 6,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 42,
+    "fields": {
+      "nom_commune": "Bouroum-Bouroum",
+      "province": 7,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 43,
+    "fields": {
+      "nom_commune": "Bousséra",
+      "province": 7,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 44,
+    "fields": {
+      "nom_commune": "Djigouè",
+      "province": 7,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 45,
+    "fields": {
+      "nom_commune": "Gaoua",
+      "province": 7,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 46,
+    "fields": {
+      "nom_commune": "Gbomblora",
+      "province": 7,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 47,
+    "fields": {
+      "nom_commune": "Kampti",
+      "province": 7,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 48,
+    "fields": {
+      "nom_commune": "Loropéni",
+      "province": 7,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 49,
+    "fields": {
+      "nom_commune": "Malba",
+      "province": 7,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 50,
+    "fields": {
+      "nom_commune": "Nako",
+      "province": 7,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 51,
+    "fields": {
+      "nom_commune": "Périgban",
+      "province": 7,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 52,
+    "fields": {
+      "nom_commune": "Diabo",
+      "province": 8,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 53,
+    "fields": {
+      "nom_commune": "Diapangou",
+      "province": 8,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 54,
+    "fields": {
+      "nom_commune": "Fada N’Gourma",
+      "province": 8,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 55,
+    "fields": {
+      "nom_commune": "Matiacoali",
+      "province": 8,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 56,
+    "fields": {
+      "nom_commune": "Tibga",
+      "province": 8,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 57,
+    "fields": {
+      "nom_commune": "Yamba",
+      "province": 8,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 58,
+    "fields": {
+      "nom_commune": "Kompienga",
+      "province": 9,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 59,
+    "fields": {
+      "nom_commune": "Pama",
+      "province": 9,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 60,
+    "fields": {
+      "nom_commune": "Madjoari",
+      "province": 9,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 61,
+    "fields": {
+      "nom_commune": "Bama",
+      "province": 10,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 62,
+    "fields": {
+      "nom_commune": "Bobo-Dioulasso",
+      "province": 10,
+      "type_commune": "Statut particulier"
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 63,
+    "fields": {
+      "nom_commune": "Dandé",
+      "province": 10,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 64,
+    "fields": {
+      "nom_commune": "Karangasso-Sambla",
+      "province": 10,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 65,
+    "fields": {
+      "nom_commune": "Karangasso-Viguè",
+      "province": 10,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 66,
+    "fields": {
+      "nom_commune": "Koundougou",
+      "province": 10,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 67,
+    "fields": {
+      "nom_commune": "Faramana",
+      "province": 10,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 68,
+    "fields": {
+      "nom_commune": "Fô",
+      "province": 10,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 69,
+    "fields": {
+      "nom_commune": "Léna",
+      "province": 10,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 70,
+    "fields": {
+      "nom_commune": "Padéma",
+      "province": 10,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 71,
+    "fields": {
+      "nom_commune": "Péni",
+      "province": 10,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 72,
+    "fields": {
+      "nom_commune": "Satiri",
+      "province": 10,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 73,
+    "fields": {
+      "nom_commune": "Toussiana",
+      "province": 10,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 74,
+    "fields": {
+      "nom_commune": "Banzon",
+      "province": 11,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 75,
+    "fields": {
+      "nom_commune": "Djigouèra",
+      "province": 11,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 76,
+    "fields": {
+      "nom_commune": "Kangala",
+      "province": 11,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 77,
+    "fields": {
+      "nom_commune": "Kayan",
+      "province": 11,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 78,
+    "fields": {
+      "nom_commune": "Koloko",
+      "province": 11,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 79,
+    "fields": {
+      "nom_commune": "Kourouma",
+      "province": 11,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 80,
+    "fields": {
+      "nom_commune": "Kourinion",
+      "province": 11,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 81,
+    "fields": {
+      "nom_commune": "Morolaba",
+      "province": 11,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 82,
+    "fields": {
+      "nom_commune": "N’Dorola",
+      "province": 11,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 83,
+    "fields": {
+      "nom_commune": "Orodara",
+      "province": 11,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 84,
+    "fields": {
+      "nom_commune": "Samôgôyiri",
+      "province": 11,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 85,
+    "fields": {
+      "nom_commune": "Samorogouan",
+      "province": 11,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 86,
+    "fields": {
+      "nom_commune": "Sindo",
+      "province": 11,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 87,
+    "fields": {
+      "nom_commune": "Békuy",
+      "province": 12,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 88,
+    "fields": {
+      "nom_commune": "Béréba",
+      "province": 12,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 89,
+    "fields": {
+      "nom_commune": "Boni",
+      "province": 12,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 90,
+    "fields": {
+      "nom_commune": "Founzan",
+      "province": 12,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 91,
+    "fields": {
+      "nom_commune": "Houndé",
+      "province": 12,
+      "type_commune": "Urbaine"
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 92,
+    "fields": {
+      "nom_commune": "Koti",
+      "province": 12,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 93,
+    "fields": {
+      "nom_commune": "Koumbia",
+      "province": 12,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 94,
+    "fields": {
+      "nom_commune": "Ouagadougou",
+      "province": 13,
+      "type_commune": "Statut particulier"
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 95,
+    "fields": {
+      "nom_commune": "Komki-lpala",
+      "province": 13,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 96,
+    "fields": {
+      "nom_commune": "Komsilga",
+      "province": 13,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 97,
+    "fields": {
+      "nom_commune": "Koubri",
+      "province": 13,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 98,
+    "fields": {
+      "nom_commune": "Pabré",
+      "province": 13,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 99,
+    "fields": {
+      "nom_commune": "Saaba",
+      "province": 13,
+      "type_commune": "Urbaine"
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 100,
+    "fields": {
+      "nom_commune": "Tanghin-Dassouri",
+      "province": 13,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 101,
+    "fields": {
+      "nom_commune": "Bourzanga",
+      "province": 14,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 102,
+    "fields": {
+      "nom_commune": "Guibaré",
+      "province": 14,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 103,
+    "fields": {
+      "nom_commune": "Kongoussi",
+      "province": 14,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 104,
+    "fields": {
+      "nom_commune": "Nasséré",
+      "province": 14,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 105,
+    "fields": {
+      "nom_commune": "Tikaré",
+      "province": 14,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 106,
+    "fields": {
+      "nom_commune": "Sabcé",
+      "province": 14,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 107,
+    "fields": {
+      "nom_commune": "Rollo",
+      "province": 14,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 108,
+    "fields": {
+      "nom_commune": "Rouko",
+      "province": 14,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 109,
+    "fields": {
+      "nom_commune": "Zimtenga",
+      "province": 14,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 110,
+    "fields": {
+      "nom_commune": "Boala",
+      "province": 15,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 111,
+    "fields": {
+      "nom_commune": "Boulsa",
+      "province": 15,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 112,
+    "fields": {
+      "nom_commune": "Bouroum",
+      "province": 15,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 113,
+    "fields": {
+      "nom_commune": "Dargo",
+      "province": 15,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 114,
+    "fields": {
+      "nom_commune": "Tougouri",
+      "province": 15,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 115,
+    "fields": {
+      "nom_commune": "Nagbingou",
+      "province": 15,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 116,
+    "fields": {
+      "nom_commune": "Yalgo",
+      "province": 15,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 117,
+    "fields": {
+      "nom_commune": "Zéguédéguin",
+      "province": 15,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 118,
+    "fields": {
+      "nom_commune": "Barsalogho",
+      "province": 16,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 119,
+    "fields": {
+      "nom_commune": "Boussouma",
+      "province": 16,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 120,
+    "fields": {
+      "nom_commune": "Dablo",
+      "province": 16,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 121,
+    "fields": {
+      "nom_commune": "Kaya",
+      "province": 16,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 122,
+    "fields": {
+      "nom_commune": "Korsimoro",
+      "province": 16,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 123,
+    "fields": {
+      "nom_commune": "Mané",
+      "province": 16,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 124,
+    "fields": {
+      "nom_commune": "Namissiguima",
+      "province": 16,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 125,
+    "fields": {
+      "nom_commune": "Pensa",
+      "province": 16,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 126,
+    "fields": {
+      "nom_commune": "Pibaoré",
+      "province": 16,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 127,
+    "fields": {
+      "nom_commune": "Pissila",
+      "province": 16,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 128,
+    "fields": {
+      "nom_commune": "Ziga",
+      "province": 16,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 129,
+    "fields": {
+      "nom_commune": "Déou",
+      "province": 17,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 130,
+    "fields": {
+      "nom_commune": "Gorom-Gorom",
+      "province": 17,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 131,
+    "fields": {
+      "nom_commune": "Markoye",
+      "province": 17,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 132,
+    "fields": {
+      "nom_commune": "Oursi",
+      "province": 17,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 133,
+    "fields": {
+      "nom_commune": "Tinakoff",
+      "province": 17,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 134,
+    "fields": {
+      "nom_commune": "Bani",
+      "province": 18,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 135,
+    "fields": {
+      "nom_commune": "Dori",
+      "province": 18,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 136,
+    "fields": {
+      "nom_commune": "Falangountou",
+      "province": 18,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 137,
+    "fields": {
+      "nom_commune": "Gorgadji",
+      "province": 18,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 138,
+    "fields": {
+      "nom_commune": "Sampelga",
+      "province": 18,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 139,
+    "fields": {
+      "nom_commune": "Seytenga",
+      "province": 18,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 140,
+    "fields": {
+      "nom_commune": "Boundoré",
+      "province": 19,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 141,
+    "fields": {
+      "nom_commune": "Mansila",
+      "province": 19,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 142,
+    "fields": {
+      "nom_commune": "Sebba",
+      "province": 19,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 143,
+    "fields": {
+      "nom_commune": "Solhan",
+      "province": 19,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 144,
+    "fields": {
+      "nom_commune": "Tankougounadié",
+      "province": 19,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 145,
+    "fields": {
+      "nom_commune": "Titabé",
+      "province": 19,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 146,
+    "fields": {
+      "nom_commune": "Bagré",
+      "province": 20,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 147,
+    "fields": {
+      "nom_commune": "Bané",
+      "province": 20,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 148,
+    "fields": {
+      "nom_commune": "Béguédo",
+      "province": 20,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 149,
+    "fields": {
+      "nom_commune": "Bittou",
+      "province": 20,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 150,
+    "fields": {
+      "nom_commune": "Bissiga",
+      "province": 20,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 151,
+    "fields": {
+      "nom_commune": "Boussouma",
+      "province": 20,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 152,
+    "fields": {
+      "nom_commune": "Garango",
+      "province": 20,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 153,
+    "fields": {
+      "nom_commune": "Komtoèga",
+      "province": 20,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 154,
+    "fields": {
+      "nom_commune": "Niaogho",
+      "province": 20,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 155,
+    "fields": {
+      "nom_commune": "Tenkodogo",
+      "province": 20,
+      "type_commune": "Urbaine"
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 156,
+    "fields": {
+      "nom_commune": "Zabré",
+      "province": 20,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 157,
+    "fields": {
+      "nom_commune": "Zoaga",
+      "province": 20,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 158,
+    "fields": {
+      "nom_commune": "Zonsé",
+      "province": 20,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 159,
+    "fields": {
+      "nom_commune": "Comin-Yanga",
+      "province": 21,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 160,
+    "fields": {
+      "nom_commune": "Dourtenga",
+      "province": 21,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 161,
+    "fields": {
+      "nom_commune": "Lalgaye",
+      "province": 21,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 162,
+    "fields": {
+      "nom_commune": "Ouargaye",
+      "province": 21,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 163,
+    "fields": {
+      "nom_commune": "Sangha",
+      "province": 21,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 164,
+    "fields": {
+      "nom_commune": "Soudougui",
+      "province": 21,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 165,
+    "fields": {
+      "nom_commune": "Yargatenga",
+      "province": 21,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 166,
+    "fields": {
+      "nom_commune": "Yondé",
+      "province": 21,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 167,
+    "fields": {
+      "nom_commune": "Andemtenga",
+      "province": 22,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 168,
+    "fields": {
+      "nom_commune": "Baskouré",
+      "province": 22,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 169,
+    "fields": {
+      "nom_commune": "Dialgaye",
+      "province": 22,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 170,
+    "fields": {
+      "nom_commune": "Gounghin",
+      "province": 22,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 171,
+    "fields": {
+      "nom_commune": "Kando",
+      "province": 22,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 172,
+    "fields": {
+      "nom_commune": "Koupèla",
+      "province": 22,
+      "type_commune": "Urbaine"
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 173,
+    "fields": {
+      "nom_commune": "Pouytenga",
+      "province": 22,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 174,
+    "fields": {
+      "nom_commune": "Tansobentenga",
+      "province": 22,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 175,
+    "fields": {
+      "nom_commune": "Yargo",
+      "province": 22,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 176,
+    "fields": {
+      "nom_commune": "Bingo",
+      "province": 23,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 177,
+    "fields": {
+      "nom_commune": "Imasgo",
+      "province": 23,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 178,
+    "fields": {
+      "nom_commune": "Kindi",
+      "province": 23,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 179,
+    "fields": {
+      "nom_commune": "Kokologo",
+      "province": 23,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 180,
+    "fields": {
+      "nom_commune": "Koudougou",
+      "province": 23,
+      "type_commune": "Urbaine"
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 181,
+    "fields": {
+      "nom_commune": "Nanoro",
+      "province": 23,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 182,
+    "fields": {
+      "nom_commune": "Nandiala",
+      "province": 23,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 183,
+    "fields": {
+      "nom_commune": "Pella",
+      "province": 23,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 184,
+    "fields": {
+      "nom_commune": "Poa",
+      "province": 23,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 185,
+    "fields": {
+      "nom_commune": "Ramongo",
+      "province": 23,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 186,
+    "fields": {
+      "nom_commune": "Sabou",
+      "province": 23,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 187,
+    "fields": {
+      "nom_commune": "Siglé",
+      "province": 23,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 188,
+    "fields": {
+      "nom_commune": "Soaw",
+      "province": 23,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 189,
+    "fields": {
+      "nom_commune": "Sourgou",
+      "province": 23,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 190,
+    "fields": {
+      "nom_commune": "Thiou",
+      "province": 23,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 191,
+    "fields": {
+      "nom_commune": "Dassa",
+      "province": 24,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 192,
+    "fields": {
+      "nom_commune": "Didyr",
+      "province": 24,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 193,
+    "fields": {
+      "nom_commune": "Godyr",
+      "province": 24,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 194,
+    "fields": {
+      "nom_commune": "Kordié",
+      "province": 24,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 195,
+    "fields": {
+      "nom_commune": "Kyon",
+      "province": 24,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 196,
+    "fields": {
+      "nom_commune": "Pouni",
+      "province": 24,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 197,
+    "fields": {
+      "nom_commune": "Réo",
+      "province": 24,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 198,
+    "fields": {
+      "nom_commune": "Ténado",
+      "province": 24,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 199,
+    "fields": {
+      "nom_commune": "Zamo",
+      "province": 24,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 200,
+    "fields": {
+      "nom_commune": "Zawara",
+      "province": 24,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 201,
+    "fields": {
+      "nom_commune": "Biéha",
+      "province": 25,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 202,
+    "fields": {
+      "nom_commune": "Boura",
+      "province": 25,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 203,
+    "fields": {
+      "nom_commune": "Léo",
+      "province": 25,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 204,
+    "fields": {
+      "nom_commune": "Nébiélianayou",
+      "province": 25,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 205,
+    "fields": {
+      "nom_commune": "Niambouri",
+      "province": 25,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 206,
+    "fields": {
+      "nom_commune": "Silly",
+      "province": 25,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 207,
+    "fields": {
+      "nom_commune": "Tô",
+      "province": 25,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 208,
+    "fields": {
+      "nom_commune": "Bakata",
+      "province": 26,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 209,
+    "fields": {
+      "nom_commune": "Bougnounou",
+      "province": 26,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 210,
+    "fields": {
+      "nom_commune": "Dalô",
+      "province": 26,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 211,
+    "fields": {
+      "nom_commune": "Gaô",
+      "province": 26,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 212,
+    "fields": {
+      "nom_commune": "Kassou",
+      "province": 26,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 213,
+    "fields": {
+      "nom_commune": "Sapouy",
+      "province": 26,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 214,
+    "fields": {
+      "nom_commune": "Doulougou",
+      "province": 27,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 215,
+    "fields": {
+      "nom_commune": "Gaongo",
+      "province": 27,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 216,
+    "fields": {
+      "nom_commune": "Ipelcé",
+      "province": 27,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 217,
+    "fields": {
+      "nom_commune": "Kayao",
+      "province": 27,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 218,
+    "fields": {
+      "nom_commune": "Kombissiri",
+      "province": 27,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 219,
+    "fields": {
+      "nom_commune": "Saponé",
+      "province": 27,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 220,
+    "fields": {
+      "nom_commune": "Toécé",
+      "province": 27,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 221,
+    "fields": {
+      "nom_commune": "Guiaro",
+      "province": 28,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 222,
+    "fields": {
+      "nom_commune": "Pô",
+      "province": 28,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 223,
+    "fields": {
+      "nom_commune": "Tiébélé",
+      "province": 28,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 224,
+    "fields": {
+      "nom_commune": "Zecco",
+      "province": 28,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 225,
+    "fields": {
+      "nom_commune": "Ziou",
+      "province": 28,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 226,
+    "fields": {
+      "nom_commune": "Béré",
+      "province": 29,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 227,
+    "fields": {
+      "nom_commune": "Bindé",
+      "province": 29,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 228,
+    "fields": {
+      "nom_commune": "Gogo",
+      "province": 29,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 229,
+    "fields": {
+      "nom_commune": "Gomboussougou",
+      "province": 29,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 230,
+    "fields": {
+      "nom_commune": "Guiba",
+      "province": 29,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 231,
+    "fields": {
+      "nom_commune": "Manga",
+      "province": 29,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 232,
+    "fields": {
+      "nom_commune": "Nobéré",
+      "province": 29,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 233,
+    "fields": {
+      "nom_commune": "Absouya",
+      "province": 30,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 234,
+    "fields": {
+      "nom_commune": "Dapélogo",
+      "province": 30,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 235,
+    "fields": {
+      "nom_commune": "Loumbila",
+      "province": 30,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 236,
+    "fields": {
+      "nom_commune": "Nagréongo",
+      "province": 30,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 237,
+    "fields": {
+      "nom_commune": "Ourgou-Manega",
+      "province": 30,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 238,
+    "fields": {
+      "nom_commune": "Ziniaré",
+      "province": 30,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 239,
+    "fields": {
+      "nom_commune": "Zitenga",
+      "province": 30,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 240,
+    "fields": {
+      "nom_commune": "Boudry",
+      "province": 31,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 241,
+    "fields": {
+      "nom_commune": "Kogho",
+      "province": 31,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 242,
+    "fields": {
+      "nom_commune": "Méguet",
+      "province": 31,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 243,
+    "fields": {
+      "nom_commune": "Mogtédo",
+      "province": 31,
+      "type_commune": "Urbaine"
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 244,
+    "fields": {
+      "nom_commune": "Salogo",
+      "province": 31,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 245,
+    "fields": {
+      "nom_commune": "Zam",
+      "province": 31,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 246,
+    "fields": {
+      "nom_commune": "Zorgho",
+      "province": 31,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 247,
+    "fields": {
+      "nom_commune": "Zoungou",
+      "province": 31,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 248,
+    "fields": {
+      "nom_commune": "Boussé",
+      "province": 32,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 249,
+    "fields": {
+      "nom_commune": "Laye",
+      "province": 32,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 250,
+    "fields": {
+      "nom_commune": "Niou",
+      "province": 32,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 251,
+    "fields": {
+      "nom_commune": "Sourgoubila",
+      "province": 32,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 252,
+    "fields": {
+      "nom_commune": "Toéghin",
+      "province": 32,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 253,
+    "fields": {
+      "nom_commune": "Bilanga",
+      "province": 33,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 254,
+    "fields": {
+      "nom_commune": "Bogandé",
+      "province": 33,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 255,
+    "fields": {
+      "nom_commune": "Coalla",
+      "province": 33,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 256,
+    "fields": {
+      "nom_commune": "Liptougou",
+      "province": 33,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 257,
+    "fields": {
+      "nom_commune": "Mani",
+      "province": 33,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 258,
+    "fields": {
+      "nom_commune": "Pièla",
+      "province": 33,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 259,
+    "fields": {
+      "nom_commune": "Thion",
+      "province": 33,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 260,
+    "fields": {
+      "nom_commune": "Bartiébougou",
+      "province": 34,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 261,
+    "fields": {
+      "nom_commune": "Gayéri",
+      "province": 34,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 262,
+    "fields": {
+      "nom_commune": "Foutouri",
+      "province": 34,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 263,
+    "fields": {
+      "nom_commune": "Baraboulé",
+      "province": 35,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 264,
+    "fields": {
+      "nom_commune": "Diguel",
+      "province": 35,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 265,
+    "fields": {
+      "nom_commune": "Djibo",
+      "province": 35,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 266,
+    "fields": {
+      "nom_commune": "Kelbo",
+      "province": 35,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 267,
+    "fields": {
+      "nom_commune": "Nassoumbou",
+      "province": 35,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 268,
+    "fields": {
+      "nom_commune": "Pobé-Mengao",
+      "province": 35,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 269,
+    "fields": {
+      "nom_commune": "Tongomayel",
+      "province": 35,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 270,
+    "fields": {
+      "nom_commune": "Arbinda",
+      "province": 36,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 271,
+    "fields": {
+      "nom_commune": "Koutougou",
+      "province": 36,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 272,
+    "fields": {
+      "nom_commune": "Barani",
+      "province": 37,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 273,
+    "fields": {
+      "nom_commune": "Bomborokuy",
+      "province": 37,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 274,
+    "fields": {
+      "nom_commune": "Bourasso",
+      "province": 37,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 275,
+    "fields": {
+      "nom_commune": "Djibasso",
+      "province": 37,
+      "type_commune": "Urbaine"
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 276,
+    "fields": {
+      "nom_commune": "Dokuy",
+      "province": 37,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 277,
+    "fields": {
+      "nom_commune": "Doumbala",
+      "province": 37,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 278,
+    "fields": {
+      "nom_commune": "Kombori",
+      "province": 37,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 279,
+    "fields": {
+      "nom_commune": "Madouba",
+      "province": 37,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 280,
+    "fields": {
+      "nom_commune": "Nouna",
+      "province": 37,
+      "type_commune": "Urbaine"
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 281,
+    "fields": {
+      "nom_commune": "Sono",
+      "province": 37,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 282,
+    "fields": {
+      "nom_commune": "Gassan",
+      "province": 38,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 283,
+    "fields": {
+      "nom_commune": "Gossina",
+      "province": 38,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 284,
+    "fields": {
+      "nom_commune": "Kougny",
+      "province": 38,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 285,
+    "fields": {
+      "nom_commune": "Toma",
+      "province": 38,
+      "type_commune": "Urbaine"
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 286,
+    "fields": {
+      "nom_commune": "Yaba",
+      "province": 38,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 287,
+    "fields": {
+      "nom_commune": "Yé",
+      "province": 38,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 288,
+    "fields": {
+      "nom_commune": "Di",
+      "province": 39,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 289,
+    "fields": {
+      "nom_commune": "Gomboro",
+      "province": 39,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 290,
+    "fields": {
+      "nom_commune": "Kassoum",
+      "province": 39,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 291,
+    "fields": {
+      "nom_commune": "Kiembara",
+      "province": 39,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 292,
+    "fields": {
+      "nom_commune": "Lanfièra",
+      "province": 39,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 293,
+    "fields": {
+      "nom_commune": "Lankoué",
+      "province": 39,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 294,
+    "fields": {
+      "nom_commune": "Toéni",
+      "province": 39,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 295,
+    "fields": {
+      "nom_commune": "Tougan",
+      "province": 39,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 296,
+    "fields": {
+      "nom_commune": "Banfora",
+      "province": 40,
+      "type_commune": "Urbaine"
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 297,
+    "fields": {
+      "nom_commune": "Bérégadougou",
+      "province": 40,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 298,
+    "fields": {
+      "nom_commune": "Mangodara",
+      "province": 40,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 299,
+    "fields": {
+      "nom_commune": "Moussodougou",
+      "province": 40,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 300,
+    "fields": {
+      "nom_commune": "Niangoloko",
+      "province": 40,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 301,
+    "fields": {
+      "nom_commune": "Ouô",
+      "province": 40,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 302,
+    "fields": {
+      "nom_commune": "Sidéradougou",
+      "province": 40,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 303,
+    "fields": {
+      "nom_commune": "Soubakaniédougou",
+      "province": 40,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 304,
+    "fields": {
+      "nom_commune": "Tiéfora",
+      "province": 40,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 305,
+    "fields": {
+      "nom_commune": "Dakôrô",
+      "province": 41,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 306,
+    "fields": {
+      "nom_commune": "Douna",
+      "province": 41,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 307,
+    "fields": {
+      "nom_commune": "Kankalaba",
+      "province": 41,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 308,
+    "fields": {
+      "nom_commune": "Loumana",
+      "province": 41,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 309,
+    "fields": {
+      "nom_commune": "Niankôrôdougou",
+      "province": 41,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 310,
+    "fields": {
+      "nom_commune": "Ouéléni",
+      "province": 41,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 311,
+    "fields": {
+      "nom_commune": "Sindou",
+      "province": 41,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 312,
+    "fields": {
+      "nom_commune": "Wolonkoto",
+      "province": 41,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 313,
+    "fields": {
+      "nom_commune": "Botou",
+      "province": 42,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 314,
+    "fields": {
+      "nom_commune": "Kantchari",
+      "province": 42,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 315,
+    "fields": {
+      "nom_commune": "Diapaga",
+      "province": 43,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 316,
+    "fields": {
+      "nom_commune": "Logobou",
+      "province": 43,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 317,
+    "fields": {
+      "nom_commune": "Namounou",
+      "province": 43,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 318,
+    "fields": {
+      "nom_commune": "Partiaga",
+      "province": 43,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 319,
+    "fields": {
+      "nom_commune": "Tambaga",
+      "province": 43,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 320,
+    "fields": {
+      "nom_commune": "Tansarga",
+      "province": 43,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 321,
+    "fields": {
+      "nom_commune": "Banh",
+      "province": 44,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 322,
+    "fields": {
+      "nom_commune": "Ouindigui",
+      "province": 44,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 323,
+    "fields": {
+      "nom_commune": "Titao",
+      "province": 44,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 324,
+    "fields": {
+      "nom_commune": "Sollé",
+      "province": 44,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 325,
+    "fields": {
+      "nom_commune": "Arbollé",
+      "province": 45,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 326,
+    "fields": {
+      "nom_commune": "Bagaré",
+      "province": 45,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 327,
+    "fields": {
+      "nom_commune": "Bokin",
+      "province": 45,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 328,
+    "fields": {
+      "nom_commune": "Gompomsom",
+      "province": 45,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 329,
+    "fields": {
+      "nom_commune": "Kirsi",
+      "province": 45,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 330,
+    "fields": {
+      "nom_commune": "La-Todem",
+      "province": 45,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 331,
+    "fields": {
+      "nom_commune": "Pilimpikou",
+      "province": 45,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 332,
+    "fields": {
+      "nom_commune": "Samba",
+      "province": 45,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 333,
+    "fields": {
+      "nom_commune": "Yako",
+      "province": 45,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 334,
+    "fields": {
+      "nom_commune": "Barga",
+      "province": 46,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 335,
+    "fields": {
+      "nom_commune": "Kalsaka",
+      "province": 46,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 336,
+    "fields": {
+      "nom_commune": "Kaïn",
+      "province": 46,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 337,
+    "fields": {
+      "nom_commune": "Kossouka",
+      "province": 46,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 338,
+    "fields": {
+      "nom_commune": "Koumbri",
+      "province": 46,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 339,
+    "fields": {
+      "nom_commune": "Namissiguima",
+      "province": 46,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 340,
+    "fields": {
+      "nom_commune": "Ouahigouya",
+      "province": 46,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 341,
+    "fields": {
+      "nom_commune": "Oula",
+      "province": 46,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 342,
+    "fields": {
+      "nom_commune": "Rambo",
+      "province": 46,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 343,
+    "fields": {
+      "nom_commune": "Séguénéga",
+      "province": 46,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 344,
+    "fields": {
+      "nom_commune": "Tangaye",
+      "province": 46,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 345,
+    "fields": {
+      "nom_commune": "Thiou",
+      "province": 46,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 346,
+    "fields": {
+      "nom_commune": "Zogoré",
+      "province": 46,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 347,
+    "fields": {
+      "nom_commune": "Bassi",
+      "province": 47,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 348,
+    "fields": {
+      "nom_commune": "Boussou",
+      "province": 47,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 349,
+    "fields": {
+      "nom_commune": "Gourcy",
+      "province": 47,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 350,
+    "fields": {
+      "nom_commune": "Léba",
+      "province": 47,
+      "type_commune": null
+    }
+  },
+  {
+    "model": "administration.commune",
+    "pk": 351,
+    "fields": {
+      "nom_commune": "Tougo",
+      "province": 47,
+      "type_commune": null
+    }
+  }
+]

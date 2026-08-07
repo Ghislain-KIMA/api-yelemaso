@@ -124,8 +124,13 @@ saisie distribuée multi-postes hors ligne. En conséquence :
 
 ## À faire ensuite
 
-- [ ] Rendre Commune.type_commune nullable
 - [ ] Insertion des seeds.
+  - [ ] Le scripte convertir_excel_vers_json.py est-elle universelle, est-ce que je peux l'utilser  par exemple pour culture,
+  - [X] Question : pour ficher excel est-ce que garder les id dérange le script ?
+  - [ ] Je veux que tu m'explique le srcript en détaille.
+  - [X] Dans quelle dossier je doit mettre le script ?
+  - [X] le nom de mes tables doivent-elle être au singulier ou au plurielle ?
+- [X] Rendre Commune.type_commune nullable
 - [ ] Commande d'extraction de plusieurs fichier.
 - [ ] Authentification (JWT déjà en dépendance, à câbler sur les vues)
 - [ ] Écran de validation web (actuellement seulement en CLI via
@@ -134,3 +139,18 @@ saisie distribuée multi-postes hors ligne. En conséquence :
   prêts : `/api/v1/genre-autre/`, etc., filtrables par `?statut=en_attente`)
 - [ ] Tests automatisés (pytest-django) sur le pipeline d'extraction
 - [ ] Peuplement systématique des tables de référence (script de seed)
+
+> NOTE:
+>
+> Quand tu charges ce JSON avec `loaddata`, Django insère les lignes avec les `pk` exacts du fichier (1, 2, 3...) — mais la **séquence auto-incrémentée** de PostgreSQL (qui génère normalement les futurs ID) n'est pas automatiquement mise à jour pour "savoir" que ces numéros sont déjà pris. Résultat possible : si tu crées une nouvelle `Region` **après** le chargement, PostgreSQL pourrait essayer de lui donner un ID déjà utilisé, et ça plante.
+>
+> **La correction, à faire une fois juste après `loaddata`**
+>
+> bash
+>
+> ```bash
+> python manage.py loaddata docs/database/seeds/geographie.json
+> python manage.py sqlsequencereset administration | python manage.py dbshell
+> ```
+> python scripts/convertir_excel_vers_json.py docs/database/seeds/source/communes_burkina.xlsx docs/database/seeds/geographie.json
+> python manage.py loaddata docs/database/seeds/geographie.json
