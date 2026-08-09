@@ -125,7 +125,7 @@ saisie distribuée multi-postes hors ligne. En conséquence :
 ## À faire ensuite
 
 - [ ] Insertion des seeds.
-  - [X] Le scripte convertir_excel_vers_json.py est-elle universelle, est-ce que je peux l'utilser  par exemple pour cultuclear
+  - [X] Le scripte convertir_excel_vers_json.py est-elle universelle, est-ce que je peux l'utilser  par exemple pour culture,
   - [ ] Au faite j'aimerais avoir une seule commande comme python manage.py collectstatic à exécuter. Voici la structure de mon api-yelemaso/docs/database/ :
 
 ├── archive
@@ -186,16 +186,15 @@ saisie distribuée multi-postes hors ligne. En conséquence :
 
     └── securite
 
-    └── source
+        └── source
 
-    └── securite.xlsx
+            └── securite.xlsx
 
 En même temps est-ce que là ou se trouve mes seeds (pour la production) est -ce que c'est la bonne emplacement ?
-
-- [X] Question : pour ficher excel est-ce que garder les id dérange le script ?
-- [ ] Je veux que tu m'explique le srcript en détaille.
-- [X] Dans quelle dossier je doit mettre le script ?
-- [X] le nom de mes tables doivent-elle être au singulier ou au plurielle ?
+  - [X] Question : pour ficher excel est-ce que garder les id dérange le script ?
+  - [ ] Je veux que tu m'explique le srcript en détaille.
+  - [X] Dans quelle dossier je doit mettre le script ?
+  - [X] le nom de mes tables doivent-elle être au singulier ou au plurielle ?
 - [X] Rendre Commune.type_commune nullable
 - [ ] Commande d'extraction de plusieurs fichier.
 - [ ] Authentification (JWT déjà en dépendance, à câbler sur les vues)
