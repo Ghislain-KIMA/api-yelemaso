@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     "apps.gestion",
     "apps.securite",
     "apps.culture",
+    "core",
 ]
 
 MIDDLEWARE = [

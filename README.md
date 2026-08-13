@@ -1,8 +1,6 @@
 # Backend — Yelemaso : plateforme de dépouillement et l'analyse des manifestations culturelles
 
-Système centralisé qui extrait automatiquement les données des Autorisations
-de Manifester (AM) à partir de documents existants (photo, scan, Word, PDF), et
-propose un dashboard d'analyse des manifestations culturelles recensées et aussi un dépouillement des AM au cours d'une année.
+Système centralisé qui extrait automatiquement les données des Autorisations de Manifester (AM) à partir de documents existants (photo, scan, Word, PDF), et propose un dashboard d'analyse des manifestations culturelles recensées et aussi un dépouillement des AM au cours d'une année.
 
 ## Installation
 
